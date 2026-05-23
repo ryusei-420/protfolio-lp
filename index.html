@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="木漏れ日の差す路地裏にある、手挽き珈琲と季節の菓子のカフェ「こもれび舎」" />
+  <title>こもれび舎 — 路地裏の珈琲と菓子</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <a href="#" class="logo">
+      <span class="logo-en">komorebi-sha</span>
+      <span class="logo-ja">こもれび舎</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="#about">私たちについて</a>
+      <a href="#menu">メニュー</a>
+      <a href="#space">空間</a>
+      <a href="#access">アクセス</a>
+      <a href="#reserve" class="nav-cta">席を予約する</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img
+          src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1920&q=80"
+          alt="湯気の立つコーヒーカップと窓からの光"
+          width="1920"
+          height="1280"
+          fetchpriority="high"
+        />
+      </div>
+      <div class="hero-content">
+        <p class="hero-tag">架空のカフェ · 東京・代々木</p>
+        <h1 class="hero-title">
+          <span class="hero-title-line">路地裏に、</span>
+          <span class="hero-title-line">ひと息つく場所。</span>
+        </h1>
+        <p class="hero-lead">
+          手挽きの豆と、季節の果実を使った菓子。<br />
+          木漏れ日が差す小さな一軒家で、ゆっくりとした時間を。
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">メニューを見る</a>
+          <a href="#reserve" class="btn btn-ghost">予約する</a>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span>scroll</span>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual reveal">
+            <img
+              src="https://images.unsplash.com/photo-1554118811-1e0d58220f8b?w=800&q=80"
+              alt="カフェのカウンターと観葉植物"
+              width="800"
+              height="1000"
+              loading="lazy"
+            />
+            <div class="about-badge">
+              <span class="about-badge-year">2019</span>
+              <span class="about-badge-text">open</span>
+            </div>
+          </div>
+          <div class="about-text reveal">
+            <p class="section-label">About</p>
+            <h2 class="section-title">こもれび舎について</h2>
+            <p>
+              代々木の路地を少し入った先、築60年の木造平屋を改装して生まれた小さなカフェです。
+              名前のとおり、午後の光が窓から木漏れ日のように差し込む空間が、私たちの原点です。
+            </p>
+            <p>
+              焙煎は週2回、店内の小さな焙煎機で。豆は中南米と東アフリカを中心に、
+              農園との直接取引を大切にしています。菓子はパティシエが毎朝、
+              その日の果物だけで仕上げる——同じ味は、二度とありません。
+            </p>
+            <ul class="about-stats">
+              <li>
+                <span class="stat-num">12</span>
+                <span class="stat-label">席</span>
+              </li>
+              <li>
+                <span class="stat-num">4</span>
+                <span class="stat-label">焙煎豆</span>
+              </li>
+              <li>
+                <span class="stat-num">100%</span>
+                <span class="stat-label">手作り菓子</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="container">
+        <header class="menu-header reveal">
+          <p class="section-label">Menu</p>
+          <h2 class="section-title">今日の一杯と、一皿</h2>
+          <p class="menu-note">※ 季節により内容が変わります（架空のメニューです）</p>
+        </header>
+
+        <div class="menu-tabs reveal" role="tablist">
+          <button class="menu-tab active" role="tab" aria-selected="true" data-tab="coffee">Coffee</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-tab="sweets">Sweets</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-tab="lunch">Lunch</button>
+        </div>
+
+        <div class="menu-panels">
+          <div class="menu-panel active" id="panel-coffee" role="tabpanel">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-head">
+                  <h3>こもれびブレンド</h3>
+                  <span class="menu-price">¥580</span>
+                </div>
+                <p>チョコとナッツの余韻。ミルクとも相性◎</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head">
+                  <h3>エチオピア ゲイシャ / ハンドドリップ</h3>
+                  <span class="menu-price">¥780</span>
+                </div>
+                <p>ジャスミンとベルガモット。浅煎り</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head">
+                  <h3>カフェラテ（豆変更可）</h3>
+                  <span class="menu-price">¥650</span>
+                </div>
+                <p>北海道産オーガニックミルク</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head">
+                  <h3>季節のサイフォン</h3>
+                  <span class="menu-price">¥880</span>
+                </div>
+                <p>限定15杯。週末のみ</p>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-panel" id="panel-sweets" role="tabpanel" hidden>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-head">
+                  <h3>いちじくと山羊チーズのタルト</h3>
+                  <span class="menu-price">¥720</span>
+                </div>
+                <p>埼玉・秩父産いちじく</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head">
+                  <h3>焙煎茶のシフォンケーキ</h3>
+                  <span class="menu-price">¥580</span>
+                </div>
+                <p>京都・一保堂のほうじ茶</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head">
+                  <h3>季節のパフェ</h3>
+                  <span class="menu-price">¥980</span>
+                </div>
+                <p>今月は、あんずとバジル</p>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-panel" id="panel-lunch" role="tabpanel" hidden>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-head">
+                  <h3>窯焼きパンのプレート</h3>
+                  <span class="menu-price">¥1,280</span>
+                </div>
+                <p>スープ・サラダ・コーヒー付（11:30–14:00）</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head">
+                  <h3>きのこと根菜のキッシュ</h3>
+                  <span class="menu-price">¥1,180</span>
+                </div>
+                <p>週替わり。ヴィーガン対応可</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head">
+                  <h3>本日のパスタ</h3>
+                  <span class="menu-price">¥1,380</span>
+                </div>
+                <p>黒板に記載。数量限定</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="space" id="space">
+      <div class="space-intro container reveal">
+        <p class="section-label">Space</p>
+        <h2 class="section-title">光と、静けさ</h2>
+        <p>カウンター4席、テーブル8席。電源・Wi‑Fiあり。ゆっくりお過ごしください。</p>
+      </div>
+      <div class="space-gallery">
+        <figure class="space-item space-item--wide reveal">
+          <img
+            src="https://images.unsplash.com/photo-1453614512568-c7d0b7c6b4e0?w=1200&q=80"
+            alt="カフェの窓際の席"
+            width="1200"
+            height="800"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="space-item reveal">
+          <img
+            src="https://images.unsplash.com/photo-1501339846602-aacbea40e4e8?w=600&q=80"
+            alt="ラテアート"
+            width="600"
+            height="800"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="space-item reveal">
+          <img
+            src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&q=80"
+            alt="ドリップコーヒー"
+            width="600"
+            height="800"
+            loading="lazy"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <section class="access" id="access">
+      <div class="container">
+        <div class="access-grid reveal">
+          <div class="access-info">
+            <p class="section-label">Access</p>
+            <h2 class="section-title">アクセス</h2>
+            <dl class="access-dl">
+              <div>
+                <dt>住所</dt>
+                <dd>〒151-0053<br />東京都渋谷区代々木3丁目○-○<br />（架空の住所です）</dd>
+              </div>
+              <div>
+                <dt>営業時間</dt>
+                <dd>
+                  火 – 金　8:00 – 18:00<br />
+                  土 – 日　9:00 – 19:00<br />
+                  月曜　定休
+                </dd>
+              </div>
+              <div>
+                <dt>最寄り</dt>
+                <dd>JR代々木駅 西口より徒歩8分</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="access-map" aria-label="地図（イメージ）">
+            <div class="map-placeholder">
+              <span>MAP</span>
+              <p>代々木 · 架空</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reserve" id="reserve">
+      <div class="container reserve-inner reveal">
+        <p class="section-label">Reservation</p>
+        <h2 class="section-title">席のご予約</h2>
+        <p class="reserve-lead">
+          週末は混み合います。2名様以上は事前予約をおすすめします。<br />
+          このフォームはデモ用です。送信しても実際には届きません。
+        </p>
+        <form class="reserve-form" id="reserveForm">
+          <div class="form-row">
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="name" required placeholder="山田 花子" />
+          </div>
+          <div class="form-row">
+            <label for="email">メール</label>
+            <input type="email" id="email" name="email" required placeholder="hello@example.com" />
+          </div>
+          <div class="form-row form-row--half">
+            <div>
+              <label for="date">日付</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div>
+              <label for="guests">人数</label>
+              <select id="guests" name="guests" required>
+                <option value="">選択</option>
+                <option value="1">1名</option>
+                <option value="2">2名</option>
+                <option value="3">3名</option>
+                <option value="4">4名</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="message">ご要望</label>
+            <textarea id="message" name="message" rows="3" placeholder="窓際の席希望など"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">予約を送信する</button>
+        </form>
+        <p class="reserve-success" id="reserveSuccess" hidden>
+          ありがとうございます。デモのため、実際の予約は行われていません。
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#" class="logo logo--footer">
+        <span class="logo-en">komorebi-sha</span>
+        <span class="logo-ja">こもれび舎</span>
+      </a>
+      <p class="footer-copy">© 2026 こもれび舎 — 架空のカフェ LP デモ</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="X">X</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
